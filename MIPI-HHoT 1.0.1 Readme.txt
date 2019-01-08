@@ -1,17 +1,17 @@
-*******************************
-*** READ ME - MIPI-HHoT 1.0 ***
-*******************************
+*********************************
+*** READ ME - MIPI-HHoT 1.0.1 ***
+*********************************
 
-Up to date as of 17 December 2018.
+Up to date as of 08 January 2019. This dataset contains the Public release of MIPI-HHoT 1.0.1.
 
 If using, please cite data set as follows:
 
-Marchal, S., L. SiÃ¶land and T. GoedemÃ© (2018) 'Methodological working paper: Using HHoT to 
+Marchal, S., L. Siöland and T. Goedemé (2018) 'Methodological working paper: Using HHoT to 
 generate institutional minimum income protection indicators.' CSB Working Paper Series, 
-No. 18/XX. <URL>
+No. 18/20. URL: <http://www.centrumvoorsociaalbeleid.be/sites/default/files/CSBWorkingPaper1820.pdf>.
 
-Marchal, S., L. SiÃ¶land and T. GoedemÃ© (2018) 'The MIPI-HHoT dataset', version 1.0. University 
-of Antwerp Centre for Social Policy: Antwerp. doi: xxxx.
+Marchal, S., L. Siöland and T. Goedemé (2018). MIPI-HHoT, Version 1.0.1. University of Antwerp 
+Data Repository, Zenodo. DOI: <http://doi.org/10.5281/zenodo.2366232>.
 
 ***********************
 *** ABOUT MIPI-HHoT ***
@@ -20,12 +20,12 @@ of Antwerp Centre for Social Policy: Antwerp. doi: xxxx.
 The MIPI-HHoT indicators have been developed at the Herman Deleeck Centre for Social Policy (CSB)
 at the University of Antwerp. The data set is a continuation of the Minimum Income Protection 
 Indicators dataset (CSB-MIPI), which included information on income components for five family
-types in five income situations for the eyars 1992, 2001, 2009 and 2012. 
+types in five income situations for the years 1992, 2001, 2009 and 2012. 
 
 While CSB-MIPI was sourced from national experts' input, MIPI-HHoT uses the Hypothetical 
 Household Tool (HHoT) module for the European microsimulation software to define model households
 whose household incomes are then simulated in EUROMOD. The development and verification of this
-dataset is documented in Marchal, SiÃ¶land & GoedemÃ© (2018, forthcoming CSB Working Paper).
+dataset is documented in Marchal, Siöland & Goedemé (2018, forthcoming CSB Working Paper).
 
 **************************************
 *** INFORMATION ABOUT THE DATA SET ***
@@ -61,8 +61,8 @@ across three income cases:
 	*	Source: Included in EUROMOD. Used for calculation of aw (cf. above).
 		NB: Belgian 2015-2017 aw_eur has been uprated using Eurostat HICP.
 
-Further details of household specifications for each country can be found in Marchal, SiÃ¶land &
-GoedemÃ© (2018).
+Further details of household specifications for each country can be found in Marchal, Siöland &
+Goedemé (2018).
 
 The following table summaries which combinations of countries, income cases and model households
 that are included in the data set:
@@ -135,9 +135,24 @@ following cases:
 
 As they were not included in CSB-MIPI at all CY, HR and MT are all excluded from this version.
 
+***********************
+*** FUTURE RELEASES ***
+***********************
+
+Future iterations of this dataset will expand on its indicators and coverage, initially including
+the separate income component levels for all countries here included, and therafter expanding the
+included countries to those not possible to validate with CSB-MIPI. The dataset will also be 
+updated in line with EUROMOD and HHoT updates.
+
 *************************************
 *** QUESTIONS AND FURTHER DETAILS ***
 *************************************
 
-In case of any questions pertaining to the data set, please contact Linus SiÃ¶land at the 
+In case of any questions pertaining to the data set, please contact Linus Siöland at the 
 University of Antwerp on linus.sioland@uantwerpen.be.
+
+******************
+*** CHANGE LOG ***
+******************
+1.0.1 190108
+- LP2C for Ireland's minimum wage case added in for all years.
