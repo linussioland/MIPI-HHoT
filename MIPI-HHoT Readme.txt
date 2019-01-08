@@ -6,11 +6,11 @@ Up to date as of 17 December 2018.
 
 If using, please cite data set as follows:
 
-Marchal, S., L. Siöland and T. Goedemé (2018) 'Methodological working paper: Using HHoT to 
+Marchal, S., L. SiÃ¶land and T. GoedemÃ© (2018) 'Methodological working paper: Using HHoT to 
 generate institutional minimum income protection indicators.' CSB Working Paper Series, 
 No. 18/XX. <URL>
 
-Marchal, S., L. Siöland and T. Goedemé (2018) 'The MIPI-HHoT dataset', version 1.0. University 
+Marchal, S., L. SiÃ¶land and T. GoedemÃ© (2018) 'The MIPI-HHoT dataset', version 1.0. University 
 of Antwerp Centre for Social Policy: Antwerp. doi: xxxx.
 
 ***********************
@@ -25,7 +25,7 @@ types in five income situations for the eyars 1992, 2001, 2009 and 2012.
 While CSB-MIPI was sourced from national experts' input, MIPI-HHoT uses the Hypothetical 
 Household Tool (HHoT) module for the European microsimulation software to define model households
 whose household incomes are then simulated in EUROMOD. The development and verification of this
-dataset is documented in Marchal, Siöland & Goedemé (2018, forthcoming CSB Working Paper).
+dataset is documented in Marchal, SiÃ¶land & GoedemÃ© (2018, forthcoming CSB Working Paper).
 
 **************************************
 *** INFORMATION ABOUT THE DATA SET ***
@@ -61,8 +61,8 @@ across three income cases:
 	*	Source: Included in EUROMOD. Used for calculation of aw (cf. above).
 		NB: Belgian 2015-2017 aw_eur has been uprated using Eurostat HICP.
 
-Further details of household specifications for each country can be found in Marchal, Siöland &
-Goedemé (2018).
+Further details of household specifications for each country can be found in Marchal, SiÃ¶land &
+GoedemÃ© (2018).
 
 The following table summaries which combinations of countries, income cases and model households
 that are included in the data set:
@@ -139,5 +139,5 @@ As they were not included in CSB-MIPI at all CY, HR and MT are all excluded from
 *** QUESTIONS AND FURTHER DETAILS ***
 *************************************
 
-In case of any questions pertaining to the data set, please contact Linus Siöland at the 
+In case of any questions pertaining to the data set, please contact Linus SiÃ¶land at the 
 University of Antwerp on linus.sioland@uantwerpen.be.
