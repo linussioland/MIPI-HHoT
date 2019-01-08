@@ -1,0 +1,158 @@
+*********************************
+*** READ ME - MIPI-HHoT 1.0.1 ***
+*********************************
+
+Up to date as of 08 January 2019. This dataset contains the Public release of MIPI-HHoT 1.0.1.
+
+If using, please cite data set as follows:
+
+Marchal, S., L. Siöland and T. Goedemé (2018) 'Methodological working paper: Using HHoT to 
+generate institutional minimum income protection indicators.' CSB Working Paper Series, 
+No. 18/20. URL: <http://www.centrumvoorsociaalbeleid.be/sites/default/files/CSBWorkingPaper1820.pdf>.
+
+Marchal, S., L. Siöland and T. Goedemé (2018). MIPI-HHoT, Version 1.0.1. University of Antwerp 
+Data Repository, Zenodo. DOI: <http://doi.org/10.5281/zenodo.2366232>.
+
+***********************
+*** ABOUT MIPI-HHoT ***
+***********************
+
+The MIPI-HHoT indicators have been developed at the Herman Deleeck Centre for Social Policy (CSB)
+at the University of Antwerp. The data set is a continuation of the Minimum Income Protection 
+Indicators dataset (CSB-MIPI), which included information on income components for five family
+types in five income situations for the years 1992, 2001, 2009 and 2012. 
+
+While CSB-MIPI was sourced from national experts' input, MIPI-HHoT uses the Hypothetical 
+Household Tool (HHoT) module for the European microsimulation software to define model households
+whose household incomes are then simulated in EUROMOD. The development and verification of this
+dataset is documented in Marchal, Siöland & Goedemé (2018, forthcoming CSB Working Paper).
+
+**************************************
+*** INFORMATION ABOUT THE DATA SET ***
+**************************************
+
+MIPI-HHoT 1.0 contains simulations of household net disposable income for four model households 
+across three income cases:
+
+-	country: Country 
+-	year: Year 
+- 	ic: Income case 
+	*	1. Households with one adult earning the equivalent of full-time minimum wage,
+		and other adults are economically inactive (i.e. not seeking work).
+	*	2. Households where no adult is in work, and all adults are seeking work.
+	*	3. Old-age households where household members are retired, but do not qualify 
+		for contribution-based old-age assistance (note that this income situation only
+		includes Single and Couple households).
+-	idhh: Household 
+	*	1. Single: One single, 35-year-old man.
+	*	2. Couple: A married heterosexual couple, both 35 years old.
+	*	3. Couple with 2 children (C2C): A married heterosexual couple, both 35 years
+		old, with two children - a boy aged 14 and a girl aged 7.
+	*	4. Lone parent with 2 children (LP2C): A divorced 35-year-old woman with two
+		children - a boy aged 14 and a girl aged 7.
+- 	ndi: Net disposable income in monthly national currency
+-	forex: 2017 fixed exchange rate to EUR, retrieved from Eurostat
+	*	Source: https://ec.europa.eu/eurostat/web/products-datasets/product?code=EI_MFRT_M
+-	euro: Indicates whether country has Euro as currency (1) or not (0).
+-	aw: Average monthly wage in national currency, retrieved from EU-SILC
+	* 	Source: Included in EUROMOD. Converted from EUR to national currencies where 
+		relevant using 2017 fixed exchange rate (cf. variable forex above).
+-	aw_eur: Average monthly wage in EUR, retrieved from EU-SILC	
+	*	Source: Included in EUROMOD. Used for calculation of aw (cf. above).
+		NB: Belgian 2015-2017 aw_eur has been uprated using Eurostat HICP.
+
+Further details of household specifications for each country can be found in Marchal, Siöland &
+Goedemé (2018).
+
+The following table summaries which combinations of countries, income cases and model households
+that are included in the data set:
+
+----------------------------------------------------
+-------- Min. wage ---- Soc. Assistance -- Old-age -
+----------------------------------------------------
+------ 1 - 2 - 3 - 4 --- 1 - 2 - 3 - 4 --- 1 - 2 ---        
+----------------------------------------------------
+- AT -               ---               ---       ---
+- BE - X   X   X   X --- X   X   X   X --- X   X --- 
+- BG - X   X   X   X --- X   X   X   X --- X   X ---  
+- CY -               ---               ---       ---
+- CZ - X           X --- X   X   X   X --- X   X --- 
+- DE -               --- X   X   X   X --- X   X ---  
+- DK -               --- X   X   X     --- X   X --- 
+- EE - X   X   X   X --- X   X   X   X --- X   X --- 
+- EL - X   X   X   X ---               --- X   X ---
+- ES - X   X   X   X --- X   X   X   X --- X   X ---  
+- FI*-               --- X   X   X   X --- X   X --- 
+- FR - X   X   X   X --- X   X   X   X --- X   X ---
+- HR -               ---               ---       --- 
+- HU - X   X   X   X --- X   X   X   X --- X   X --- 
+- IE - X   X   X   X --- X   X   X     --- X   X --- 
+- IT -               ---               --- X   X ---
+- LT - X   X   X   X --- X   X   X   X ---       ---
+- LU - X   X   X   X --- X   X   X   X --- X   X ---  
+- LV - X   X   X   X --- X   X   X   X --- X   X ---
+- MT -               ---               ---       ---  
+- NL - X   X   X   X --- X   X   X   X --- X   X --- 
+- PL - X   X   X   X --- X   X   X   X --- X   X ---  
+- PT - X   X   X   X --- X   X   X   X --- X   X --- 
+- RO - X   X   X   X --- X   X   X   X --- X   X ---  
+- SE -               --- X   X   X   X ---       --- 
+- SI - X   X   X     --- X   X   X     --- X   X ---  
+- SK - X   X   X   X --- X   X   X   X --- X   X ---  
+- UK - X   X   X   X --- X   X   X   X --- X   X --- 
+-----------------------------------------------------
+
+Where countries could not be validated against previous CSB-MIPI data due to missing benefits
+or simulations in EUROMOD (usually due to data restrictions in the underlying microdata), these
+were exluded from the sample. In the minimum wage-earning situation this also applied for 
+countries where no minimum wage was in place for the years 2009 and 2012, the CSB-MIPI years
+which data was validated against. This entailed the exclusion of all or some households in the 
+following cases:
+
+- 	AT: All cases excluded due to missing simulation of housing benefits.
+- 	CZ: Couple and Couple with 2 children excluded from minimum wage-earning 
+	income situation due to social assistance programming currently not taking into account
+	whether non-working spouse is actively looking for work or not, leading to over-
+	estimation.
+-	DE: No minimum wage in 2009 and 2012.
+-	DK: No minimum wage in 2009 and 2012. Additionally alimony benefit not programmed for 
+	Lone parent with 2 children, which is therefore excluded.
+-	EE: Public pension not simulated but social assistance compensates to correct level.
+	Therefore included despite missing income component.
+-	EL: No data to compare against for social assistance case, therefore excluded.
+-	FI: No minimum wage in 2009 and 2012. Also no housing benefit programmed in EUROMOD
+	prior to 2015, leading to underestimation. Therefore included for social assistance 
+	case only from 2015.
+-	IE: Not possible to compare lone-parent social assistance situation due to lacking 
+	documentation in CSB-MIPI. All other cases included.
+-	IT: No minimum wage in 2009 and 2012. Also lacking data to compare against for social
+	assistance case. Therefore only included for old-age.
+-	LT: Public pension not simulated, old-age excluded.
+-	SE: No minimum wage in 2009 and 2012. Public pension not simulated. Therefore only 
+	included for social assistance.
+-	SI: Alimony benefit not programmed for Lone parent with 2 children, which is therefore 
+	excluded.
+
+As they were not included in CSB-MIPI at all CY, HR and MT are all excluded from this version.
+
+***********************
+*** FUTURE RELEASES ***
+***********************
+
+Future iterations of this dataset will expand on its indicators and coverage, initially including
+the separate income component levels for all countries here included, and therafter expanding the
+included countries to those not possible to validate with CSB-MIPI. The dataset will also be 
+updated in line with EUROMOD and HHoT updates.
+
+*************************************
+*** QUESTIONS AND FURTHER DETAILS ***
+*************************************
+
+In case of any questions pertaining to the data set, please contact Linus Siöland at the 
+University of Antwerp on linus.sioland@uantwerpen.be.
+
+******************
+*** CHANGE LOG ***
+******************
+1.0.1 190108
+- LP2C for Ireland's minimum wage case added in for all years.
